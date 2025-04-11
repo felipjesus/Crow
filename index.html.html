@@ -1,0 +1,107 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+
+<head>
+    <meta charset="UTF-8">
+    <title>O Corvo - Gravação</title>
+    <style>
+        body {
+            margin: 0;
+            padding: 0;
+            background: url("fundo.jpg") no-repeat center center fixed;
+            background-size: cover;
+            color: white;
+            font-family: 'Courier New', monospace;
+            height: 100vh;
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            align-items: center;
+            animation: piscar 3s infinite alternate;
+        }
+
+        @keyframes piscar {
+            0% {
+                filter: brightness(0.6);
+            }
+
+            50% {
+                filter: brightness(1);
+            }
+
+            100% {
+                filter: brightness(0.6);
+            }
+        }
+
+        .caixa {
+            background-color: rgba(0, 0, 0, 0.7);
+            padding: 30px;
+            border: 1px solid crimson;
+            border-radius: 10px;
+            max-width: 600px;
+            text-align: center;
+        }
+
+        h1 {
+            color: crimson;
+        }
+
+        audio {
+            margin-top: 20px;
+            width: 100%;
+        }
+
+        .background-audio {
+            display: none;
+        }
+    </style>
+</head>
+
+<body>
+    <!-- Áudio ambiente de corvos -->
+    <audio class="background-audio" autoplay loop>
+        <source src="corvos.mp3" type="audio/mpeg">
+    </audio>
+
+    <div class="caixa">
+  <meta charset="UTF-8">
+  <title>Gravação Encontrada</title>
+  <style>
+    body {
+      background-color: black;
+      color: white;
+      font-family: 'Courier New', monospace;
+      padding: 40px;
+    }
+
+    h1 {
+      color: crimson;
+    }
+
+    .audio-box {
+      margin-top: 30px;
+      background-color: #111;
+      padding: 20px;
+      border: 1px solid crimson;
+      border-radius: 8px;
+    }
+  </style>
+</head>
+
+<body>
+  <h1>Gravação Encontrada</h1>
+  <p>
+    Data: 03:44 AM — Local: Subterrâneo<br><br>
+    Usuário: ****** ****
+  </p>
+
+  <div class="audio-box">
+    <audio controls>
+      <source src="voz_corvo.mp3.mp3" type="audio/mpeg">
+      Seu navegador não suporta áudio.
+    </audio>
+  </div>
+</body>
+
+</html>
